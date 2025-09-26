@@ -8,17 +8,15 @@ return new class extends Migration
 {
     public function up(): void
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('kelas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('npm')->unique();   // kalau tidak mau unique, hapus ->unique()
-            $table->unsignedBigInteger('kelas_id')->nullable(); // FK ditambahkan di migrasi terpisah
+            $table->string('nama_kelas'); // contoh: IF A, IF B, dst.
             $table->timestamps();
         });
     }
 
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('kelas');
     }
 };
