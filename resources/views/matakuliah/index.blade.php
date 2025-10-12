@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
     <h3>Daftar Mata Kuliah</h3>
     <a href="{{ route('matakuliah.create') }}" class="btn btn-success mb-3">+ Tambah Mata Kuliah</a>

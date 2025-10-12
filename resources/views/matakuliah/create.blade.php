@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
     <h3>Tambah Mata Kuliah</h3>
     <form action="{{ route('matakuliah.store') }}" method="POST">

@@ -1,9 +1,7 @@
 @extends('layouts.app')
 @section('content')
-<<<<<<< HEAD
-=======
 
->>>>>>> addf508 (Selesai Langkah Praktikum Modul 5)
+
     <h3>Tambah User</h3>
     <form action="{{ route('users.store') }}" method="POST">
         @csrf

@@ -1,10 +1,8 @@
 @extends('layouts.app')
 
-@section('content')
-<<<<<<< HEAD
-=======
 
->>>>>>> addf508 (Selesai Langkah Praktikum Modul 5)
+@section('content')
+
     <h3>Daftar User</h3>
     <a href="{{ route('users.create') }}" class="btn btn-success mb-3">+ Tambah User</a>
 
@@ -37,8 +35,5 @@
             @endforeach
         </tbody>
     </table>
-<<<<<<< HEAD
-=======
 
->>>>>>> addf508 (Selesai Langkah Praktikum Modul 5)
 @endsection

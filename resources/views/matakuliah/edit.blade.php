@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+
 @section('content')
     <h3>Edit Mata Kuliah</h3>
     <form action="{{ route('matakuliah.update', $mk->id) }}" method="POST">
