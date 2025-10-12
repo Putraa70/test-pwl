@@ -1,6 +1,7 @@
 @extends('layouts.app')
-
 @section('content')
+
+
     <h3>Tambah User</h3>
     <form action="{{ route('users.store') }}" method="POST">
         @csrf

@@ -1,13 +1,15 @@
 @extends('layouts.app')
 
+
 @section('content')
+
     <h3>Daftar User</h3>
     <a href="{{ route('users.create') }}" class="btn btn-success mb-3">+ Tambah User</a>
 
     <table class="table table-bordered">
         <thead class="table-dark">
             <tr>
-                <th>ID</th>
+                <th>No</th>
                 <th>Nama</th>
                 <th>NPM</th>
                 <th>Kelas</th>
@@ -17,7 +19,7 @@
         <tbody>
             @foreach($users as $u)
             <tr>
-                <td>{{ $u->id }}</td>
+                <td>{{ $loop->iteration }}</td> 
                 <td>{{ $u->nama }}</td>
                 <td>{{ $u->npm }}</td>
                 <td>{{ $u->kelas->nama_kelas ?? '-' }}</td>
@@ -33,4 +35,5 @@
             @endforeach
         </tbody>
     </table>
+
 @endsection
